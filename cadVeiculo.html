@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro de Veículo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+
+  <nav id="menu">
+    <ul>
+      <li><a href="indexLogado.html">Home</a></li>
+      <li><a href="index.html">Efetuar Logout</a></li>
+    </ul>
+  </nav>
+
+  <header>
+   <h1>Cadastro de Veículo</h1>
+  </header>
+  
+
+
+  <section id="secao">
+    <form action="indexLogado.html" method="post">
+        <div>
+          <label for="marca">Marca:</label>
+          <input type="text" id="marca" pattern="[A-Za-zÀ-ú\s]+$" title="O campo Marca deve permitir somente letras." required />
+        </div>
+        </br>
+        <div> 
+          <label for="modelo">Modelo:</label>
+          <input type="text" id="modelo" required />
+        </div>
+        </br>
+        <div>
+          <label for="tipo">Tipo:</label> 
+          <select>
+            <option value="Automóvel Pequeno">Automóvel Pequeno</option>
+            <option value="Motocicleta">Motocicleta</option>
+            <option value="Automóvel Grande">Automóvel Grande</option>
+          </select> 
+        </div>
+        </br>
+        <div>
+          <label for="preco">Preço:</label>
+          <input type="text" id="preco" required />
+        </div>
+        </br>
+        <div>
+          <label for="ano">Ano de fabricação:</label>
+          <input type="date">
+        </div>
+        </br>
+        <div>
+          <label for="quilometragem">Quilometragem:</label>
+          <input type="text" id="quilometragem" required />
+        </div>
+        </br>
+        <div>
+          <label for="combustivel">Combustível:</label>
+          <input type="text" id="combustivel" required />
+        </div>
+        </br>
+        <div>
+          <label for="cambio">Câmbio do veículo:</label>
+          <input type="text" id="cambio" required />
+        </div>
+        </br>
+        <div>
+          <label for="portas">Portas do veículo:</label>
+          <input type="number" id="portas" min="2" max="4" required />
+        </div>
+        </br>
+        <div>
+          <label for="cor">Cor externa do veículo:</label>
+          <input type="text" id="cor" required />
+        </div>
+        </br>
+        <div>
+          <label for="placa">Placa do veículo:</label>
+          <input type="text" id="placa" required />
+        </div>
+        </br>
+        <div>
+          <label for="blindagem">Blindagem do veículo:</label>
+          <input type="text" id="blindagem" required />
+        </div>
+        </br>
+        <div>
+          <label for="foto">Foto do veículo:</label>
+          <input type="file" id="foto" roequired />
+        </div> 
+        </br> 
+        <div>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </div> 
+    </form>
+  </section>
+  
+<script type="text/javascript" src="validacaocadveiculo.js"></script>
+</body>
+
+</html>
